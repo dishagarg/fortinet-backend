@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+      <style>
+      </style>
+  </head>
+  <body>
+
+    <img src="http://cookbook.fortinet.com/wp-content/uploads/2016/11/Fortinet-01.jpg" alt="Fortinet Logo">
+    <h2>Fortinet Test</h2>
+
+    <div>
+      <table>
+        <tr>
+          <th>Application</th>
+          <th>Site URL</th>
+          <th>Comments</th>
+        </tr>
+        {% for row in json %}
+          <tr>
+            <td> {{ row.6 }} </td>
+            <td> {{ row.7 }} </td>
+            <td> {{ row.9 }} </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>
