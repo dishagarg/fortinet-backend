@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import django_heroku
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -119,3 +121,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 JSON_URL = "https://gist.githubusercontent.com/dishagarg/75409c67fd4eec74d1c0d8ba21fc7223/raw/31b614b357fb4e1d283def043feb254cc204859b/data.json"
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
